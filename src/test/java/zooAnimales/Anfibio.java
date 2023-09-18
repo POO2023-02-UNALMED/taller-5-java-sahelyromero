@@ -23,6 +23,46 @@ public class Anfibio extends Animal{
 		
 	}
 	
+	public static int getRanas() {
+		return ranas;
+	}
+
+	public static void setRanas(int ranas) {
+		Anfibio.ranas = ranas;
+	}
+
+	public static int getSalamandras() {
+		return salamandras;
+	}
+
+	public static void setSalamandras(int salamandras) {
+		Anfibio.salamandras = salamandras;
+	}
+
+	public String getColorPiel() {
+		return colorPiel;
+	}
+
+	public void setColorPiel(String colorPiel) {
+		this.colorPiel = colorPiel;
+	}
+
+	public boolean getVenenoso() {
+		return venenoso;
+	}
+
+	public void setVenenoso(boolean venenoso) {
+		this.venenoso = venenoso;
+	}
+	
+	public static ArrayList<Anfibio> getListado() {
+		return Anfibio.listado;
+	}
+
+	public static void setListado(ArrayList<Anfibio> listado) {
+		Anfibio.listado = listado;
+	}
+
 	public Anfibio crearRana(String nombre, int edad, String genero) {
 		
 		Anfibio rana = new Anfibio(nombre, edad, "selva", genero, "rojo", true);
@@ -38,12 +78,6 @@ public class Anfibio extends Animal{
 		Anfibio.salamandras += 1;
 		Anfibio.listado.add(salamandra);
 		return salamandra;
-		
-	}
-	
-	public static ArrayList<Anfibio> getListado() {
-		
-		return Anfibio.listado;
 		
 	}
 	

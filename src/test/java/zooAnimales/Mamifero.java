@@ -23,6 +23,46 @@ public class Mamifero extends Animal{
 		
 	}
 	
+	public static int getCaballos() {
+		return caballos;
+	}
+
+	public static void setCaballos(int caballos) {
+		Mamifero.caballos = caballos;
+	}
+
+	public static int getLeones() {
+		return leones;
+	}
+
+	public static void setLeones(int leones) {
+		Mamifero.leones = leones;
+	}
+
+	public boolean getPelaje() {
+		return pelaje;
+	}
+
+	public void setPelaje(boolean pelaje) {
+		this.pelaje = pelaje;
+	}
+
+	public int getPatas() {
+		return patas;
+	}
+
+	public void setPatas(int patas) {
+		this.patas = patas;
+	}
+	
+	public static ArrayList<Mamifero> getListado() {
+		return Mamifero.listado;
+	}
+
+	public static void setListado(ArrayList<Mamifero> listado) {
+		Mamifero.listado = listado;
+	}
+
 	public Mamifero crearCaballo(String nombre, int edad, String genero) {
 		
 		Mamifero caballo = new Mamifero(nombre, edad, "pradera", genero, true, 4);
@@ -41,10 +81,4 @@ public class Mamifero extends Animal{
 			
 	}
 	
-	public static ArrayList<Mamifero> getListado() {
-		
-		return Mamifero.listado;
-		
-	}
-
 }
