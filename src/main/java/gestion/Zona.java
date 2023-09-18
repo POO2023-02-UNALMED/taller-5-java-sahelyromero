@@ -36,7 +36,7 @@ public class Zona {
 	}
 	
 	
-	public void setZoo(ArrayList<Zoologico> zoo) {
+	public void setZoo(Zoologico zoo) {
 		this.zoo = zoo;
 	}
 
@@ -44,7 +44,7 @@ public class Zona {
 		return this.animales;
 	}
 	
-	public void setAnimales(ArrayList<Animal> animales) {
+	public void setAnimales(List<Animal> animales) {
 		this.animales = animales;
 	}
 

@@ -62,11 +62,11 @@ public class Reptil extends Animal{
 		this.largoCola = largoCola;
 	}
 	
-	public static ArrayList<Reptil> getListado() {
+	public static List<Reptil> getListado() {
 		return Reptil.listado;
 	}
 
-	public static void setListado(ArrayList<Reptil> listado) {
+	public static void setListado(List<Reptil> listado) {
 		Reptil.listado = listado;
 	}
 

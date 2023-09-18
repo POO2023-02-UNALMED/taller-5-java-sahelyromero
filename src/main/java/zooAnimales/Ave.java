@@ -51,11 +51,11 @@ public class Ave extends Animal {
 		this.colorPlumas = colorPlumas;
 	}
 	
-	public static ArrayList<Ave> getListado() {
+	public static List<Ave> getListado() {
 		return Ave.listado;
 	}
 
-	public static void setListado(ArrayList<Ave> listado) {
+	public static void setListado(List<Ave> listado) {
 		Ave.listado = listado;
 	}
 

@@ -62,11 +62,11 @@ public class Mamifero extends Animal{
 		this.patas = patas;
 	}
 	
-	public static ArrayList<Mamifero> getListado() {
+	public static List<Mamifero> getListado() {
 		return Mamifero.listado;
 	}
 
-	public static void setListado(ArrayList<Mamifero> listado) {
+	public static void setListado(List<Mamifero> listado) {
 		Mamifero.listado = listado;
 	}
 

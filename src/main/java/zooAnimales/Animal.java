@@ -71,11 +71,11 @@ public class Animal {
 		this.genero = genero;
 	}
 
-	public ArrayList<Zona> getZona() {
+	public List<Zona> getZona() {
 		return zona;
 	}
 
-	public void setZona(ArrayList<Zona> zona) {
+	public void setZona(List<Zona> zona) {
 		this.zona = zona;
 	}
 

@@ -62,11 +62,11 @@ public class Pez extends Animal{
 		this.cantidadAletas = cantidadAletas;
 	}
 	
-	public static ArrayList<Pez> getListado() {
+	public static List<Pez> getListado() {
 		return Pez.listado;
 	}
 
-	public static void setListado(ArrayList<Pez> listado) {
+	public static void setListado(List<Pez> listado) {
 		Pez.listado = listado;
 	}
 
