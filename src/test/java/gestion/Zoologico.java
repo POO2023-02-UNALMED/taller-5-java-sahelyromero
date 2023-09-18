@@ -1,7 +1,6 @@
 package gestion;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Zoologico {
 	
@@ -36,7 +35,7 @@ public class Zoologico {
 		this.ubicacion = ubicacion;
 	}
 
-	public ArrayList<Zona> getZona() {
+	public ArrayList<Zona> getZonas() {
 		return zonas;
 	}
 

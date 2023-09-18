@@ -1,7 +1,6 @@
 package zooAnimales;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Ave extends Animal {
 	
