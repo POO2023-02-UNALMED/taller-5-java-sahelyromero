@@ -53,7 +53,7 @@ public class Ave extends Animal {
 		Ave.listado = listado;
 	}
 
-	public Ave crearHalcon(String nombre, int edad, String genero) {
+	public static Ave crearHalcon(String nombre, int edad, String genero) {
 		
 		Ave halcon = new Ave(nombre, edad, "montanas", genero, "cafe glorioso");
 		Ave.halcones += 1;
@@ -62,7 +62,7 @@ public class Ave extends Animal {
 		
 	}
 	
-	public Ave crearAguila(String nombre, int edad, String genero) {
+	public static Ave crearAguila(String nombre, int edad, String genero) {
 		
 		Ave aguila = new Ave(nombre, edad, "montanas", genero, "blanco y amarillo");
 		Ave.aguilas += 1;

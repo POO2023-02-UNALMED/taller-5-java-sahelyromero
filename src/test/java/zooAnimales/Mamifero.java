@@ -63,7 +63,7 @@ public class Mamifero extends Animal{
 		Mamifero.listado = listado;
 	}
 
-	public Mamifero crearCaballo(String nombre, int edad, String genero) {
+	public static Mamifero crearCaballo(String nombre, int edad, String genero) {
 		
 		Mamifero caballo = new Mamifero(nombre, edad, "pradera", genero, true, 4);
 		Mamifero.caballos += 1;
@@ -72,7 +72,7 @@ public class Mamifero extends Animal{
 			
 	}
 	
-	public Mamifero crearLeon(String nombre, int edad, String genero) {
+	public static Mamifero crearLeon(String nombre, int edad, String genero) {
 		
 		Mamifero leon = new Mamifero(nombre, edad, "selva", genero, true, 4);
 		Mamifero.leones += 1;
