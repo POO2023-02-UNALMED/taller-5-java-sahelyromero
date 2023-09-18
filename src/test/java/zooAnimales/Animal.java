@@ -41,8 +41,39 @@ public class Animal {
 		int totalpeces = Pez.getListado().size();
 		int totalanfibios = Anfibio.getListado().size();
 		
-		return ("Mamiferos: " + totalmamiferos + "\n" + "Aves: " + totalaves + "\n" +"Reptiles: " + totalreptiles + "\n" +"Peces: " + totalpeces + "\n" +"Anfibios: " + totalanfibios );
+		return ("Mamiferos: " + totalmamiferos + "\n" + 
+		"Aves: " + totalaves + "\n" +
+		"Reptiles: " + totalreptiles + "\n" +
+		"Peces: " + totalpeces + "\n" +
+		"Anfibios: " + totalanfibios);
 		
+	}
+	
+	public String toString() {
+		
+		if (this.zona.size() != 0) {
+			
+			return ("Mi nombre es " + this.nombre + 
+					", tengo una edad de " + this.edad + 
+					", habito en " + this.habitat + 
+					" y mi genero es " + this.genero + 
+					" la zona en la que me ubico es " + this.zona.get(1) + 
+					", en el " + this.zona.get(1).getZoo());
+			
+		}
+		
+		else {
+			
+			return ("Mi nombre es " + this.nombre + 
+					", tengo una edad de " + this.edad + 
+					", habito en " + this.habitat + 
+					" y mi genero es " + this.genero);
+		}
+	}
+	
+	public String movimiento() {
+		
+		return ("desplazarse");
 	}
 
 }

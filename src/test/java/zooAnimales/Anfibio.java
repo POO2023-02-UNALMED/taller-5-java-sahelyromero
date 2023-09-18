@@ -2,8 +2,6 @@ package zooAnimales;
 
 import java.util.ArrayList;
 
-import gestion.Zona;
-
 public class Anfibio extends Animal{
 	
 	private static ArrayList<Anfibio> listado;
@@ -25,19 +23,21 @@ public class Anfibio extends Animal{
 		
 	}
 	
-	public void crearRana(String nombre, int edad, String genero) {
+	public Anfibio crearRana(String nombre, int edad, String genero) {
 		
 		Anfibio rana = new Anfibio(nombre, edad, "selva", genero, "rojo", true);
 		Anfibio.ranas += 1;
 		Anfibio.listado.add(rana);
+		return rana;
 		
 	}
 	
-	public void crearSalamandra(String nombre, int edad, String genero) {
+	public Anfibio crearSalamandra(String nombre, int edad, String genero) {
 		
 		Anfibio salamandra = new Anfibio(nombre, edad, "negro y amarillo", genero, "rojo", false);
 		Anfibio.salamandras += 1;
 		Anfibio.listado.add(salamandra);
+		return salamandra;
 		
 	}
 	
@@ -45,6 +45,11 @@ public class Anfibio extends Animal{
 		
 		return Anfibio.listado;
 		
+	}
+	
+	public String movimiento() {
+		
+		return ("saltar");
 	}
 
 }
