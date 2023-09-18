@@ -57,7 +57,6 @@ public class Ave extends Animal {
 		
 		Ave halcon = new Ave(nombre, edad, "montanas", genero, "cafe glorioso");
 		Ave.halcones += 1;
-		Ave.listado.add(halcon);
 		return halcon;
 		
 	}
@@ -66,7 +65,6 @@ public class Ave extends Animal {
 		
 		Ave aguila = new Ave(nombre, edad, "montanas", genero, "blanco y amarillo");
 		Ave.aguilas += 1;
-		Ave.listado.add(aguila);
 		return aguila;
 		
 	}

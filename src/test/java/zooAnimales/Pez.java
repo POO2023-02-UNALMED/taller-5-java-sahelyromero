@@ -67,7 +67,6 @@ public class Pez extends Animal{
 		
 		Pez salmon = new Pez(nombre, edad, "oceano", genero, "rojo", 6);
 		Pez.salmones += 1;
-		Pez.listado.add(salmon);
 		return salmon;
 		
 	}
@@ -76,7 +75,6 @@ public class Pez extends Animal{
 		
 		Pez bacalao = new Pez(nombre, edad, "oceano", genero, "gris", 6);
 		Pez.bacalaos += 1;
-		Pez.listado.add(bacalao);
 		return bacalao;
 		
 	}

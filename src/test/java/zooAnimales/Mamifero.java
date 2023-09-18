@@ -67,7 +67,6 @@ public class Mamifero extends Animal{
 		
 		Mamifero caballo = new Mamifero(nombre, edad, "pradera", genero, true, 4);
 		Mamifero.caballos += 1;
-		Mamifero.listado.add(caballo);
 		return caballo;
 			
 	}
@@ -76,7 +75,6 @@ public class Mamifero extends Animal{
 		
 		Mamifero leon = new Mamifero(nombre, edad, "selva", genero, true, 4);
 		Mamifero.leones += 1;
-		Mamifero.listado.add(leon);
 		return leon;
 			
 	}

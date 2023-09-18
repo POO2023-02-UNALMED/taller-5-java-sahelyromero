@@ -67,7 +67,6 @@ public class Anfibio extends Animal{
 		
 		Anfibio rana = new Anfibio(nombre, edad, "selva", genero, "rojo", true);
 		Anfibio.ranas += 1;
-		Anfibio.listado.add(rana);
 		return rana;
 		
 	}
@@ -76,7 +75,6 @@ public class Anfibio extends Animal{
 		
 		Anfibio salamandra = new Anfibio(nombre, edad, "negro y amarillo", genero, "rojo", false);
 		Anfibio.salamandras += 1;
-		Anfibio.listado.add(salamandra);
 		return salamandra;
 		
 	}

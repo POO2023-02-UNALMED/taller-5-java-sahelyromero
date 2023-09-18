@@ -67,7 +67,6 @@ public class Reptil extends Animal{
 		
 		Reptil iguana = new Reptil(nombre, edad, "humedal", genero, "verde", 3);
 		Reptil.iguanas += 1;
-		Reptil.listado.add(iguana);
 		return iguana;
 		
 	}
@@ -76,7 +75,6 @@ public class Reptil extends Animal{
 		
 		Reptil serpiente = new Reptil(nombre, edad, "jungla", genero, "blanco", 1);
 		Reptil.serpientes += 1;
-		Reptil.listado.add(serpiente);
 		return serpiente;
 		
 	}
