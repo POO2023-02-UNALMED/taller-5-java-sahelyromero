@@ -49,13 +49,13 @@ public class Zona {
 
 	public void agregarAnimales(Animal animal){
 		
-		this.getAnimales().add(animal);
+		this.animales.add(animal);
 		
 	}
 	
 	public int cantidadAnimales() {
 		
-		return this.getAnimales().size();
+		return this.animales.size();
 		
 	}
 
