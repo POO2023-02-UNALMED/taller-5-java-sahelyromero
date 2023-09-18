@@ -20,7 +20,7 @@ public class Animal {
 		this.edad = edad;
 		this.habitat = habitat;
 		this.genero = genero;
-		this.zona.get(1).getAnimales().add(this);
+		this.zona.get(0).getAnimales().add(this);
 			
 	}
 	
@@ -106,8 +106,8 @@ public class Animal {
 					", tengo una edad de " + this.edad + 
 					", habito en " + this.habitat + 
 					" y mi genero es " + this.genero + 
-					" la zona en la que me ubico es " + this.zona.get(1) + 
-					", en el " + this.zona.get(1).getZoo());
+					" la zona en la que me ubico es " + this.zona.get(0) + 
+					", en el " + this.zona.get(0).getZoo());
 			
 		}
 		
