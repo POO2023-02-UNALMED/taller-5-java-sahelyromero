@@ -1,5 +1,7 @@
 package zooAnimales;
 
+import java.util.ArrayList;
+
 import gestion.Zona;
 
 public class Animal {
@@ -9,7 +11,7 @@ public class Animal {
 	private int edad;
 	private String habitat;
 	private String genero;
-	private Zona[] zona;
+	private ArrayList<Zona> zona = new ArrayList<Zona>(1);
 	
 	public Animal(String nombre, int edad, String habitat, String genero) {
 		
@@ -22,6 +24,24 @@ public class Animal {
 	}
 	
 	public Animal() {
+		
+	}
+	
+	public static int totalAnimales() {
+		
+		return Animal.totalAnimales;
+		
+	}
+	
+	public static String totalPorTipo() {
+		
+		int totalmamiferos = Mamifero.getListado().size();
+		int totalaves = Ave.getListado().size();
+		int totalreptiles = Reptil.getListado().size();
+		int totalpeces = Pez.getListado().size();
+		int totalanfibios = Anfibio.getListado().size();
+		
+		return ("Mamiferos: " + totalmamiferos + "\n" + "Aves: " + totalaves + "\n" +"Reptiles: " + totalreptiles + "\n" +"Peces: " + totalpeces + "\n" +"Anfibios: " + totalanfibios );
 		
 	}
 
