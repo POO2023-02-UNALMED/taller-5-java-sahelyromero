@@ -20,5 +20,9 @@ public class Animal {
 		this.genero = genero;
 			
 	}
+	
+	public Animal() {
+		
+	}
 
 }
