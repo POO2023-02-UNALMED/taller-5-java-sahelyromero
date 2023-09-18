@@ -40,7 +40,7 @@ public class Zona {
 		this.zoo = zoo;
 	}
 
-	public ArrayList<Animal> getAnimales() {
+	public List<Animal> getAnimales() {
 		return this.animales;
 	}
 	
